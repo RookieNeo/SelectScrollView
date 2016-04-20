@@ -14,6 +14,7 @@
 		18497AC01CC7A1E100FF8814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18497ABE1CC7A1E100FF8814 /* LaunchScreen.storyboard */; };
 		18497ACB1CC7A1E100FF8814 /* SelectScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18497ACA1CC7A1E100FF8814 /* SelectScrollViewTests.swift */; };
 		18497AD61CC7A1E100FF8814 /* SelectScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18497AD51CC7A1E100FF8814 /* SelectScrollViewUITests.swift */; };
+		18497AE81CC7A2E300FF8814 /* ZXPersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18497AE61CC7A2E300FF8814 /* ZXPersonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		18497AD11CC7A1E100FF8814 /* SelectScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18497AD51CC7A1E100FF8814 /* SelectScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectScrollViewUITests.swift; sourceTree = "<group>"; };
 		18497AD71CC7A1E100FF8814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18497AE51CC7A2E300FF8814 /* ZXPersonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPersonView.h; sourceTree = "<group>"; };
+		18497AE61CC7A2E300FF8814 /* ZXPersonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPersonView.m; sourceTree = "<group>"; };
+		18497AEC1CC7A4B700FF8814 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		18497AB41CC7A1E100FF8814 /* SelectScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				18497AE31CC7A2E300FF8814 /* ScrollView-Titles */,
 				18497AB51CC7A1E100FF8814 /* AppDelegate.swift */,
 				18497AB71CC7A1E100FF8814 /* ViewController.swift */,
 				18497AB91CC7A1E100FF8814 /* Main.storyboard */,
 				18497ABC1CC7A1E100FF8814 /* Assets.xcassets */,
 				18497ABE1CC7A1E100FF8814 /* LaunchScreen.storyboard */,
 				18497AC11CC7A1E100FF8814 /* Info.plist */,
+				18497AEC1CC7A4B700FF8814 /* Header.h */,
 			);
 			path = SelectScrollView;
 			sourceTree = "<group>";
@@ -123,6 +129,15 @@
 				18497AD71CC7A1E100FF8814 /* Info.plist */,
 			);
 			path = SelectScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		18497AE31CC7A2E300FF8814 /* ScrollView-Titles */ = {
+			isa = PBXGroup;
+			children = (
+				18497AE51CC7A2E300FF8814 /* ZXPersonView.h */,
+				18497AE61CC7A2E300FF8814 /* ZXPersonView.m */,
+			);
+			path = "ScrollView-Titles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +273,7 @@
 			files = (
 				18497AB81CC7A1E100FF8814 /* ViewController.swift in Sources */,
 				18497AB61CC7A1E100FF8814 /* AppDelegate.swift in Sources */,
+				18497AE81CC7A2E300FF8814 /* ZXPersonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +419,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Neo.SelectScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/apple/Desktop/SelectScrollView/SelectScrollView/SelectScrollView/Header.h;
 			};
 			name = Debug;
 		};
@@ -414,6 +431,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Neo.SelectScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/apple/Desktop/SelectScrollView/SelectScrollView/SelectScrollView/Header.h;
 			};
 			name = Release;
 		};
@@ -482,6 +500,7 @@
 				18497ADC1CC7A1E100FF8814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18497ADD1CC7A1E100FF8814 /* Build configuration list for PBXNativeTarget "SelectScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +509,7 @@
 				18497ADF1CC7A1E100FF8814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18497AE01CC7A1E100FF8814 /* Build configuration list for PBXNativeTarget "SelectScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +518,7 @@
 				18497AE21CC7A1E100FF8814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
